@@ -6,27 +6,101 @@
     <title>My personal portafolio</title>
 </head>
 <body>
-    <ins><h1 style="text-align: center;">Yoelmis Perdomo - Riwi Developer</h1></ins>
+    <ins><h1>Yoelmis Perdomo - Riwi Developer</h1></ins>
     <main>
-        <section>
+        <section id="About Me">
             <h2>About Me</h2>
         <p>Hello, I am Yoelmis Perdomo.</p>
         <p>I am a happy person, I like learm about new topics and try challenge. I am gay and I like suck dick</p>
         <p>I am learming about software development, currently I know about Python and learming HTML and CSS.</p>
-        </section>
-        <img src="img/Yomismo.jpeg" alt="Foto de Yoelmis Perdomo" width="200">
+        <img src="img/Yomismo.jpeg" alt="Foto de Yoelmis Perdomo" width="25%">
         <ul>
             <li>HTMl</li>
             <li>Python</li>
         </ul>
-        <section>
-            <h2>Porjects</h2>
-            <h3>Project 1: Products validation system</h3>
-            <p> Is a program to calculate the total cost of a purchase in a store. </p>
-            <img src="./img/Captura desde 2025-05-22 12-03-35.png" alt="products validation system" width="400">
-            <h3>Project 2: Notes validartor</h3>
-            <p> is a program to validate notes from </p>
         </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><h3>Project 1: Products validation system</h3></li>
+                    <p> It is a program to calculate the total cost of a purchase in a store. </p>
+                    <img src="./img/Captura desde 2025-05-22 12-03-35.png" alt="products validation system" width="30%">
+                <li><h3>Project 2: Notes validator</h3></li>
+                    <p> 
+                        It is a program to validate notes indicated by User, allows you to identify if note pass or fail,
+                        calculate averrage's notes and compare if notes are more than a certain note.
+                    </p>
+                    <img src="/img/Captura de pantalla 2025-05-22 153141.png" alt="" width="30%">
+                    <img src="/img/Captura de pantalla 2025-05-22 154700.png" alt="" width="30%">
+                <li><h3>Project 3: Management inventory system</h3></li>
+                    <p>
+                        It is a program to manage an inventory, allows you to add products, search products,
+                        update prices and quantity products, remove products, show inventory list and calculate total value inventory.
+                    </p>
+                    <img src="/img/Captura de pantalla 2025-05-22 161314.png" alt="" width="30%">
+                <li>
+                    <h3>Table Projects</h3>
+                    <table style="margin: 35px 50 px">
+                        <thead style="text-align: center">
+                            <th style="border: 1px blue solid;">Project Name</th>
+                            <th style="border: 1px blue solid;">Technologies Used</th>
+                            <th style="border: 1px blue solid;">Link</th>
+                        </thead>
+                        <tbody style="text-align: center">
+                            <td style="border: 1px black solid">Products validation system</td>
+                            <td style="border: 1px black solid">Python</td>
+                            <td style="border: 1px black solid"><a href="https://github.com/YePerdom/modulo_1_semana_1">View Project</a></td>
+                        </tbody>
+                        <tbody style="text-align: center">
+                            <td style="border: 1px black solid">Notes validator</td>
+                            <td style="border: 1px black solid">Python</td>
+                            <td style="border: 1px black solid"><a href="https://github.com/YePerdom/M1S2">View Project</a></td>
+                        </tbody>
+                        <tbody style="text-align: center">
+                            <td style="border: 1px black solid">Management inventory system</td>
+                            <td style="border: 1px black solid">Python</td>
+                            <td style="border: 1px black solid"><a href="https://github.com/YePerdom/M1S3">View Project</a></td>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </section>
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <form action="/send" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+
+                <input type="submit" value="Sent"><br><br>
+            </form>
+        </section>
+        <hr>
     </main>
+    <footer>
+        <div style="float: right; width: 50%;">
+            <h2>Social</h2>
+            <a href="https://github.com/YePerdom"><img src="./img/icons/github.png" alt="github" width="2%"></a><br>
+            <a href="https://www.facebook.com/yoe.pardo/?viewas=100000686899395&locale=es_LA"><img src="/img/icons/facebook.png" alt="facebook" width="2%"></a><br>
+            <a href="https://api.whatsapp.com/send/?phone=573004860456&text&type=phone_number&app_absent=0"><img src="/img/icons/whatsapp.png" alt="whatsapp" width="2%"></a><br>
+        </div>
+        <div style="float: left; width: 50%;">
+            <h2>Links</h2>
+            <nav>
+                <li style="list-style: none;"><a style="color: black;" href="#About Me"><strong>About Me</strong></a></li>
+                <li style="list-style: none;"><a style="color: black;" href="#Projects"><strong>Projects</strong></a></li>
+                <li style="list-style: none;"><a style="color: black;" href="#Contact"><strong>Contact Me</strong></a></li>
+            </nav>
+        </div>
+        <div>
+            <hr>
+            <h5>Copyright &copy; 2025, All Rights Reserved.</h5>
+        </div>
+    </footer>
 </body>
 </html>
